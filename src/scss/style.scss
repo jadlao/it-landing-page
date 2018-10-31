@@ -32,6 +32,7 @@ body, html {
                         text-decoration: none;
                         color: #212733;
                         padding: 10px 15px;
+                        transition: all 0.3s ease-in-out;
                         &:hover {
                             background: #212733;
                             color: white;
@@ -45,13 +46,21 @@ body, html {
             }
         }
         .hero-text {
-            margin-top: 100px;
+            padding: 100px 0 300px 100px;
+            width: 450px;
             h1 {
-            font-weight: 300;
-            text-transform: uppercase;
+                font-weight: 300;
+                font-size: 2.3rem;
+                letter-spacing: 5;
+                text-transform: uppercase;
+                color: #212733;
+            }
+            p {
+                color: #707071;
             }
             ul {
                 list-style: none;
+                float: right;
                 li {
                     display: inline-block;
                     background: #cecece;
@@ -93,11 +102,18 @@ body, html {
                 h4 {
                     text-transform: uppercase;
                 }
+                p {
+                    font-weight: 700;
+                }
                 a {
                     color: #75c372;
+                    font-weight: 700;
                 }
             }
         }
-        
+        .bottom-border {
+            background: #212934;
+            height: 20px;
+        }
     }
 }

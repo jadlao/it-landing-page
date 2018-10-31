@@ -27,7 +27,9 @@ body, html {
           .container .hero nav ul li a {
             text-decoration: none;
             color: #212733;
-            padding: 10px 15px; }
+            padding: 10px 15px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
             .container .hero nav ul li a:hover {
               background: #212733;
               color: white; }
@@ -35,12 +37,19 @@ body, html {
               background: #212733;
               color: white; }
     .container .hero .hero-text {
-      margin-top: 100px; }
+      padding: 100px 0 300px 100px;
+      width: 450px; }
       .container .hero .hero-text h1 {
         font-weight: 300;
-        text-transform: uppercase; }
+        font-size: 2.3rem;
+        letter-spacing: 5;
+        text-transform: uppercase;
+        color: #212733; }
+      .container .hero .hero-text p {
+        color: #707071; }
       .container .hero .hero-text ul {
-        list-style: none; }
+        list-style: none;
+        float: right; }
         .container .hero .hero-text ul li {
           display: inline-block;
           background: #cecece;
@@ -72,5 +81,11 @@ body, html {
           font-size: 3rem; }
         .container .slanted-area .col-text .col h4 {
           text-transform: uppercase; }
+        .container .slanted-area .col-text .col p {
+          font-weight: 700; }
         .container .slanted-area .col-text .col a {
-          color: #75c372; }
+          color: #75c372;
+          font-weight: 700; }
+    .container .slanted-area .bottom-border {
+      background: #212934;
+      height: 20px; }
