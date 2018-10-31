@@ -13,10 +13,10 @@ body, html {
         .brand {
             position: absolute;
             z-index: -1;
-            right: -120px;
+            right: -80px;
             top: 200px;
-            height: 400px;
-            width: 500px;
+            height: 600px;
+            width: 650px;
         }
         nav {
             display: block;
@@ -46,12 +46,13 @@ body, html {
             }
         }
         .hero-text {
-            padding: 100px 0 300px 100px;
+            padding: 100px 0 300px 180px;
             width: 450px;
             h1 {
                 font-weight: 300;
                 font-size: 2.3rem;
                 letter-spacing: 5;
+                line-height: 1.3;
                 text-transform: uppercase;
                 color: #212733;
             }
@@ -79,10 +80,19 @@ body, html {
     .slanted-area {
         background: #0b4e70;
         margin: 0 -100px;
-        display: block;
+        position: relative;
+        .slanted-bg {
+            background: #0b4e70;
+            transform: skew(0, 6deg);
+            width: 100%;
+            height: 250px;
+            position: absolute;
+            z-index: -1;
+            top: -110px;
+        }
         .col-text {
             display: inline-block;
-            padding: 100px;
+            padding: 0 100px 100px 100px;
             width: 80%;
             &:after {
                 content: "";

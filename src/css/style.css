@@ -11,10 +11,10 @@ body, html {
     .container .hero .brand {
       position: absolute;
       z-index: -1;
-      right: -120px;
+      right: -80px;
       top: 200px;
-      height: 400px;
-      width: 500px; }
+      height: 600px;
+      width: 650px; }
     .container .hero nav {
       display: block; }
       .container .hero nav ul {
@@ -37,12 +37,13 @@ body, html {
               background: #212733;
               color: white; }
     .container .hero .hero-text {
-      padding: 100px 0 300px 100px;
+      padding: 100px 0 300px 180px;
       width: 450px; }
       .container .hero .hero-text h1 {
         font-weight: 300;
         font-size: 2.3rem;
         letter-spacing: 5;
+        line-height: 1.3;
         text-transform: uppercase;
         color: #212733; }
       .container .hero .hero-text p {
@@ -62,10 +63,19 @@ body, html {
   .container .slanted-area {
     background: #0b4e70;
     margin: 0 -100px;
-    display: block; }
+    position: relative; }
+    .container .slanted-area .slanted-bg {
+      background: #0b4e70;
+      -webkit-transform: skew(0, 6deg);
+      transform: skew(0, 6deg);
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      z-index: -1;
+      top: -110px; }
     .container .slanted-area .col-text {
       display: inline-block;
-      padding: 100px;
+      padding: 0 100px 100px 100px;
       width: 80%; }
       .container .slanted-area .col-text:after {
         content: "";
