@@ -12,6 +12,7 @@ body, html {
         display: block;
         .brand {
             position: absolute;
+            z-index: -1;
             right: -120px;
             top: 200px;
             height: 400px;
@@ -26,11 +27,16 @@ body, html {
                     display: inline-block;
                     margin-left: 15px;
                     text-transform: uppercase;
+                    
                     a {
                         text-decoration: none;
                         color: #212733;
                         padding: 10px 15px;
                         &:hover {
+                            background: #212733;
+                            color: white;
+                        }
+                        &.active {
                             background: #212733;
                             color: white;
                         }
@@ -44,6 +50,21 @@ body, html {
             font-weight: 300;
             text-transform: uppercase;
             }
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    background: #cecece;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    &.active {
+                        background: #212733;
+                    }
+                }
+                
+            }
         }
     }
     .slanted-area {
@@ -53,8 +74,28 @@ body, html {
         .col-text {
             display: inline-block;
             padding: 100px;
-            .col {
-                width: 30%;
+            width: 80%;
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .col{
+                width: 33.33%;
+                float: left;
+                text-align: center;
+                i, h4, p {
+                    color: white;
+                }
+                i {
+                    font-size: 3rem;
+                }
+                h4 {
+                    text-transform: uppercase;
+                }
+                a {
+                    color: #75c372;
+                }
             }
         }
         
