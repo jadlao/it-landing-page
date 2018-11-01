@@ -37,6 +37,8 @@ body, html {
             .container .hero nav ul li a.active {
               background: #212733;
               color: white; }
+      .container .hero nav .mob-draw {
+        display: none; }
     .container .hero .hero-text {
       padding: 100px 0 300px 180px;
       width: 450px; }
@@ -100,3 +102,56 @@ body, html {
     .container .slanted-area .bottom-border {
       background: #212934;
       height: 20px; }
+  @media screen and (max-width: 1330px) {
+    .container .hero .hero-text {
+      padding: 100px 0 300px 50px; }
+    .container .hero .brand {
+      width: 550px;
+      top: 200px; } }
+  @media screen and (max-width: 1070px) {
+    .container .hero .hero-text {
+      padding: 100px 0 300px 0px; }
+    .container .hero .brand {
+      width: 450px;
+      top: 250px; } }
+  @media screen and (max-width: 980px) {
+    .container .hero nav ul li {
+      margin-left: 5px;
+      font-size: 0.8rem; }
+    .container .hero .hero-text {
+      padding: 100px 0 300px 0px; }
+      .container .hero .hero-text ul {
+        float: left;
+        padding-left: 0; }
+    .container .slanted-area .col-text {
+      width: 100%;
+      display: block;
+      padding: 0 0 50px 0; }
+      .container .slanted-area .col-text .col {
+        width: 100%;
+        margin: 50px 0; } }
+  @media screen and (max-width: 820px) {
+    .container .hero nav ul li {
+      margin-left: 0px;
+      font-size: 0.6rem; }
+    .container .hero .hero-text {
+      margin-bottom: 100px; }
+    .container .hero .brand {
+      top: 350px; } }
+  @media screen and (max-width: 706px) {
+    .container .hero nav ul {
+      display: none; }
+    .container .hero nav .mob-draw {
+      display: block;
+      float: right;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-right: -50px; }
+    .container .hero .hero-text {
+      padding: 50px 0px 300px 0px;
+      margin-left: -50px;
+      width: 100%; }
+      .container .hero .hero-text h1 {
+        font-size: 1.5rem; }
+    .container .hero .brand {
+      top: 300px; } }
