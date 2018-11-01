@@ -155,3 +155,9 @@ body, html {
         font-size: 1.5rem; }
     .container .hero .brand {
       top: 300px; } }
+  @media screen and (max-width: 480px) {
+    .container .hero .hero-text {
+      padding: 50px 0px 200px 0px; }
+    .container .hero .brand {
+      top: 360px;
+      width: 300px; } }
