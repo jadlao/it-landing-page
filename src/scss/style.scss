@@ -4,10 +4,61 @@ body, html {
     padding: 0;
     font-family: 'Helvetica' , Arial, sans-serif;
     font-weight: 300;
+    position: relative;
 }
 
 .container {
     padding: 50px 100px;
+    .open {
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+    .mob-menu {
+        background: #212733;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        animation: fadeInMenu 0.3s forwards;
+        @keyframes fadeInMenu {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .fa-times {
+            float: right;
+            color: white;
+            font-size: 2rem;
+            padding: 50px;
+            cursor: pointer;
+        }
+        ul {
+            list-style: none;
+            margin-top: 200px;
+            li {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 20px;
+                
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.3s ease-in-out;
+                    &:hover {
+                        color: #0b4e70;
+                    }
+                }
+            }
+        }
+    }
+
     .hero {
         display: block;
         .brand {

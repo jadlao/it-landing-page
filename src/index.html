@@ -10,6 +10,18 @@
 
 <body>
   <div class="container">
+    <div id="mob-menu" class="mob-menu close">
+      <i class="fa fa-times" onclick="closeMenu()" aria-hidden="true"></i>
+
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Consult</a></li>
+          <li><a href="#">Implement</a></li>
+          <li><a href="#">Manage</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
     <!-- Hero start -->
     <div class="hero">
       
@@ -24,7 +36,7 @@
         <li><a href="#" class="active">Contact</a></li>
       </ul>
 
-      <i class="mob-draw fa fa-bars" aria-hidden="true"></i>
+      <i class="mob-draw fa fa-bars" onclick="openMenu()" aria-hidden="true"></i>
 
     </nav>
     <!-- Navigation end -->
@@ -77,6 +89,7 @@
   </div>
   
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
