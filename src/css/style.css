@@ -11,10 +11,11 @@ body, html {
     .container .hero .brand {
       position: absolute;
       z-index: -1;
-      right: -80px;
-      top: 200px;
-      height: 600px;
-      width: 650px; }
+      right: 0;
+      top: 130px;
+      height: 700px;
+      width: 650px;
+      padding-right: -12px; }
     .container .hero nav {
       display: block; }
       .container .hero nav ul {
