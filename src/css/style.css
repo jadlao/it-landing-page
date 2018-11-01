@@ -41,7 +41,8 @@ body, html {
       cursor: pointer; }
     .container .mob-menu ul {
       list-style: none;
-      margin-top: 200px; }
+      margin-top: 200px;
+      padding-left: 0; }
       .container .mob-menu ul li {
         font-size: 2rem;
         text-align: center;
