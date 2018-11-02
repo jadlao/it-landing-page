@@ -1,5 +1,5 @@
-// initializes slick carousel
 $(document).ready(function(){
+    // initializes slick carousel
     $('.hero-carousel').slick({
         dots: true,
         infinite: true,
@@ -10,21 +10,12 @@ $(document).ready(function(){
         autoplaySpeed: 5000,
         arrows: false
       });
+
+    // hamburger transformation
+    var $hamburger = $(".hamburger");
+    var $menu = $('.mob-menu');
+    $hamburger.on("click", function(e) {
+        $hamburger.toggleClass("is-active");
+        $menu.toggleClass("is-closed");
+    });
   });
-
-    
-// opens mobile menu
-function openMenu() {
-    //console.log('click');
-    var d = document.getElementById('mob-menu');
-    d.classList.remove('close');
-    d.className += ' open';
-}
-
-// closes mobile menu
-function closeMenu() {
-    //console.log('click');
-    var d = document.getElementById('mob-menu');
-    d.classList.remove('open');
-    d.className += ' close';
-}
