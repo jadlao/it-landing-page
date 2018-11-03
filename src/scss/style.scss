@@ -311,6 +311,18 @@ body, html {
             }
         }
     }
+
+    @media screen and (max-width: 380px) {
+        .hero {
+            .hero-text {
+                width: 200px;
+            }
+            .brand {
+                top: 370px;
+                width: 300px;
+            }
+        }
+    }
 }
 
 

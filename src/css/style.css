@@ -205,3 +205,9 @@ body, html {
     .container .hero .brand {
       top: 350px;
       width: 300px; } }
+  @media screen and (max-width: 380px) {
+    .container .hero .hero-text {
+      width: 200px; }
+    .container .hero .brand {
+      top: 370px;
+      width: 300px; } }
