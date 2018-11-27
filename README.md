@@ -1,25 +1,3 @@
-# Sass Starter Pack
+# IT Landing Page
 
-A light package for compiling Sass and running a dev server
-
-### Version
-1.0.0
-
-## Usage
-
-
-### Installation
-
-Install the dependencies (gulp, gulp-sass, browser-sync)
-
-```sh
-$ npm install
-```
-
-### Run
-
-This will watch your sass files, compile them and run your dev server at http://localhost:3000
-
-```sh
-$ npm start
-```
+Landing page that is responsive across all viewports. Includes slick carousel, skewed background, navigation draw, smooth mobile menu transformations, and SVG logo that scales along with viewport size.
